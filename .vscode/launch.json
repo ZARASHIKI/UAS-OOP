@@ -5,16 +5,21 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "startupClass": "${fileBasename}",
-            "cwd": "${fileDirname}",
-            "jdkPath": "${env:JAVA_HOME}/bin",
             "type": "java",
             "name": "Launch App",
             "request": "launch",
             "mainClass": "App",
             "vmArgs": "--module-path d:\\javafx-sdk-17.0.1\\lib\\ --add-modules javafx.controls,javafx.fxml",
-            "projectName": "UAS OOP_4539f452"
+            "projectName": "UAS-OOP_8e9099e1"
         },
-        
+        {
+            "type": "pwa-node",
+            "request": "launch",
+            "name": "Launch Program",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${file}"
+        }
     ]
 }
