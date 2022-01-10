@@ -39,7 +39,7 @@ public class makanan {
         }
     }
 
-    public boolean delete() {
+    public boolean delete(int id) {
         Database db = new Database();
         try {
             Statement state = db.conn.createStatement();
