@@ -10,6 +10,7 @@ import javafx.stage.Stage;
 import java.sql.ResultSet;
 import javafx.scene.control.*;
 import javafx.scene.control.Button;
+import java.io.FileNotFoundException;
 
 public class App extends Application {
     TableView<makanan> tableView = new TableView<makanan>();
@@ -19,7 +20,7 @@ public class App extends Application {
     }
 
     @Override
-    public void start(Stage primaryStage) {
+    public void start(Stage primaryStage) throws FileNotFoundException {
         primaryStage.setTitle("UAS OOP");
         TableColumn<makanan, String> columnID = new TableColumn<>("No");
         columnID.setCellValueFactory(new PropertyValueFactory<>("Id"));
